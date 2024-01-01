@@ -1,16 +1,42 @@
 .App {
   text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: sans-serif;
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+.cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+.btn{
+  padding: 10px 10px;
+  background-color: rgb(43, 141, 226);
+  color: antiquewhite;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: rgb(220, 239, 162);
+  color: black;
+
 }
 
 .App-header {
@@ -22,10 +48,40 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+.App{
+  /* min-height: 100vh; */
+  max-width: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin-top: 100px; */
 }
 
 .App-link {
   color: #61dafb;
+table{
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+th, td{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+thead{
+
+  background-color: rgb(197, 150, 242);
+
+}
+tr:hover{
+  background-color: rgb(162, 244, 244);
+}
+tr{
+  background-color: rgb(203, 230, 230);
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +91,8 @@
   to {
     transform: rotate(360deg);
   }
+.butn{
+ display: flex;
+ justify-content: space-evenly;
+ gap: 20px;
 }
